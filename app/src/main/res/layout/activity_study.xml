@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg">
+
+    <include layout="@layout/title"/>
+    <TimePicker
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"></TimePicker>
+
+    <Button
+        android:id="@+id/start_time"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始专心"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+</LinearLayout>

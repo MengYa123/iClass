@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PPTDetailActivity"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+    <include layout="@layout/title"/>
+    <ListView
+        android:id="@+id/list_page"
+        android:layout_width="match_parent"
+        android:layout_height="620dp">
+    </ListView>
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="刷新"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

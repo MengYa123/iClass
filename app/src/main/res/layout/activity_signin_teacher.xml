@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/main_bg">
+
+<include layout="@layout/title"/>
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="null"/>
+    <Button
+        android:id="@+id/btnStartSignin"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="开始签到"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnEndSignin"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="结束签到"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已签到："
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/signinnum"
+            android:text="人数显示"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_already"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

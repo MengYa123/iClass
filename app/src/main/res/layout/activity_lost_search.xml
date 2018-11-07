@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LostSearchActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg">
+    <include layout="@layout/title" />
+
+    <ListView
+        android:id="@+id/lost_item_search"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"></ListView>
+    <EditText
+        android:id="@+id/search_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入关键字"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:background="#d9d7d7"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:text="点击搜索"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SchoolBusActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg">
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="选择校区区间："
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/start_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="—"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/end_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/time_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="前有“★”为星期一至星期五每日固定班车，其余时间由调度根据实际情况临时安排"
+        android:textColor="#000"
+        android:textSize="10sp"/>
+
+</LinearLayout>
